@@ -36,29 +36,29 @@ Esta API, escrita em C# e hospedada em um repositório privado, é responsável 
 
 ## IA
 
-### Sobre o EfficientDet-D0
+### Sobre o MobileNet
 
-O `EfficientDet-D0` é uma arquitetura de Rede Neural Convolucional (CNN) desenvolvida para detecção de objetos, fazendo parte da série EfficientDet introduzida pela Google Research. Essa família de modelos é reconhecida por sua alta eficiência, apresentando um equilíbrio notável entre a precisão e a velocidade de inferência. O `EfficientDet-D0`, sendo a versão mais compacta e ágil da série, é ideal para aplicações em ambientes com recursos computacionais restritos, mantendo, ainda assim, uma precisão de detecção robusta.
+O `MobileNet` é uma arquitetura de Rede Neural Convolucional (CNN) projetada para aplicações móveis e embarcadas, destacando-se por sua eficiência computacional e baixo consumo de recursos. Essa família de modelos é amplamente reconhecida por seu desempenho excepcional em tarefas de visão computacional, como classificação e detecção de objetos, oferecendo um equilíbrio ideal entre precisão e velocidade para dispositivos com capacidade de processamento limitada.
 
-### Processo Geral Incorporando o EfficientDet-D0
+### Processo Geral Incorporando o MobileNet
 
-1. **Conversão do Modelo para TFLite**: Inicialmente, o modelo pré-treinado `EfficientDet-D0` é convertido para TensorFlow Lite (TFLite), otimizando sua execução em dispositivos com limitações de capacidade computacional.
+1. **Conversão do Modelo para TFLite**: O modelo pré-treinado `MobileNet` é inicialmente convertido para TensorFlow Lite (TFLite), adaptando-o para um uso mais eficiente em dispositivos móveis e de baixa potência.
 
-2. **Detecção de Objetos em Imagens**: Utilizando o modelo convertido, o script executa o `EfficientDet-D0` para identificar objetos em imagens. Através da função `tflite_detect_image`, a imagem é processada, a inferência é realizada e as caixas delimitadoras são desenhadas ao redor dos objetos detectados.
+2. **Classificação de Imagens**: Utilizando o modelo convertido, o script aplica o `MobileNet` para classificar objetos em imagens. A função `tflite_classify_image` processa a imagem de entrada, realiza a inferência com o modelo TFLite e identifica as principais classes dos objetos presentes na imagem.
 
-3. **Geração de Arquivos XML e CSV**: Os dados das detecções são armazenados em arquivos XML, que contêm detalhes das detecções por imagem, e em um arquivo CSV, que compila as classes identificadas.
+3. **Geração de Arquivos XML e CSV**: As informações da classificação são salvas em arquivos XML, que detalham as classificações por imagem, e em um arquivo CSV, que agrega as classes identificadas e suas respectivas probabilidades.
 
-### Funcionamento do EfficientDet-D0 no Script
+### Funcionamento do MobileNet no Script
 
-- **Inferência Eficiente**: O script processa a imagem recebida da terceira API com o `EfficientDet-D0`, identificando a localização e as classes dos objetos presentes. Através de técnicas avançadas de detecção e um backbone eficaz, o modelo consegue ser rápido e acurado, até mesmo em dispositivos com menor potência computacional.
+- **Inferência Eficiente**: O script analisa a imagem recebida, utilizando o `MobileNet` para classificar os objetos detectados. Através de uma estrutura otimizada e técnicas de processamento avançadas, o modelo oferece rapidez e precisão na classificação, mesmo em dispositivos com recursos limitados.
 
-- **Pós-processamento e Análise**: Após a inferência, o script realiza um pós-processamento para extrair as coordenadas das caixas delimitadoras, as classes e as probabilidades dos objetos detectados. Essas informações são utilizadas para ilustrar as caixas nas imagens, gerar arquivos XML para cada detecção e compilar um resumo no arquivo CSV.
+- **Pós-processamento e Análise**: Após a classificação, um pós-processamento é realizado para extrair as classes dos objetos e suas probabilidades. Essas informações são empregadas para atualizar as imagens com etiquetas indicativas, gerar arquivos XML para cada classificação e compilar um resumo no arquivo CSV.
 
-- **Comunicação**: Subsequentemente, um vetor contendo 10 estados, com valores de 0 a 8 que representam as medições realizadas pela IA, é recebido. Esses dados são processados em [analysis.py](https://github.com/visagetrack-project/vt-model/blob/main/analysis.py) e enviados para a API primária.
+- **Comunicação**: Em seguida, é recebido um vetor contendo 10 estados, com valores de 0 a 8, que representam as medições realizadas pela IA. Esses dados são processados em [analysis.py](https://github.com/visagetrack-project/vt-model/blob/main/analysis.py) e enviados para a API primária.
 
-### Aplicação do EfficientDet-D0
+### Aplicação do MobileNet
 
-Os resultados obtidos podem ser visualizados na seguinte imagem: ![blobs.jpeg](https://github.com/visagetrack-project/.github/blob/a0ad6ef25561d476ca5be027df0538b9d013afd8/profile/blobs.jpeg)
+Os resultados da classificação podem ser visualizados na seguinte imagem: ![blobs.jpeg](https://github.com/visagetrack-project/.github/blob/a0ad6ef25561d476ca5be027df0538b9d013afd8/profile/blobs.jpeg)
 
 
 ## Documentação do funcionamento dos 'Blobs'
