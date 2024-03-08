@@ -2,7 +2,7 @@
 
 O Visage Track Project é dedicado ao Reconhecimento de expressões faciais em ambientes controlados, gerados proceduralmente utilizando técnicas avançadas de Geometria Analítica, Álgebra Linear e Cálculo Numérico.
 
-**Aluno:** Jáder Louis de Souza Gonçalves  
+**Alunos:** Jáder Louis, Wyllgner França, Nicolas Sales
 **Projeto:** Reconhecimento de expressões faciais em ambientes controlados gerados proceduralmente.  
 **Orientador:** Prof. Dr. Lucas Marques
 
