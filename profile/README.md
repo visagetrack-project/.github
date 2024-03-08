@@ -7,7 +7,9 @@ Orientador: Prof Dr. Lucas Marques
 
 ![[unir 1.png]]
 
-# Documentação do funcionamento dos 'Blobs'![[WhatsApp Image 2024-02-12 at 16.09.49.jpeg]]
+# Documentação do funcionamento dos 'Blobs'
+
+![[WhatsApp Image 2024-02-12 at 16.09.49.jpeg]]
 
 Para entender o comportamento dos Blobs é essencial entender a formula de GLC (Gerador Linear Congruente), que é a base de tudo isso
 
