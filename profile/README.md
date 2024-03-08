@@ -15,6 +15,7 @@ Para entender o comportamento dos Blobs, é essencial compreender a fórmula do 
 ![Documento Blob](https://github.com/visagetrack-project/.github/blob/687927c5ac1b96ad2807e33c2aa88ed99c9fa6e5/profile/WhatsApp%20Image%202024-02-12%20at%2016.09.49.jpeg)
 
 Para entender o comportamento dos Blobs é essencial entender a formula de GLC (Gerador Linear Congruente), que é a base de tudo isso
+Usando a formula para gerar números aleatórios:
 
 $$
 X_{n+1} = (aX_n + c) \mod m
@@ -26,10 +27,6 @@ $$
 - c é o incremento,
 - m é o módulo.
 
-Usando a formula para gerar números aleatórios:
-$$
-X_{n+1} = (aX_n + c) \mod m
-$$
 
 Logo definimos as características iniciais:
 
