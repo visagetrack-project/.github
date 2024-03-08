@@ -13,8 +13,8 @@ Para entender o comportamento dos Blobs é essencial entender a formula de GLC (
 
 $$
 X_{n+1} = (aX_n + c) \mod m
-
 $$
+
 - Xn+1​ representa o próximo número na sequência,
 - a é o multiplicador,
 - Xn​ é o número atual ou a semente,
@@ -24,16 +24,16 @@ $$
 Usando a formula para gerar números aleatórios:
 $$
 X_{n+1} = (aX_n + c) \mod m
-
 $$
-Logo definimos as características iniciais:
+
+Logo definimos as características iniciais:\
+
 $$
 \begin{align*}
 \text{Sejam } & min = 0 \text{ e } max = 100. \\
 \text{Para cada variável } & x \in \{ \text{laziness}, \text{commitment}, \text{interest} \}, \\
 & x = X_{n+1} = (aX_n + c) \mod m(min,max).
 \end{align*}
-
 $$
 
 $$
