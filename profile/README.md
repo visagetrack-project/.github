@@ -103,7 +103,7 @@ x &= \left( \frac{\text{laziness}}{10} \right) \cdot \left( \text{interest} \cdo
 \end{align*}
 $$
 
-> [!tips] O que exatamente está acontecendo aqui? 
+> O que exatamente está acontecendo aqui? 
 > Aqui estamos filtrando exatamente a reação a cada tipo de comportamento com base no quanto ele esta disposto a continuar, sendo X o interesse, alem de definir a formula para diminuir ou aumentar a preguiça ao longo do tempo.
 
 ## Visão Lógica:
