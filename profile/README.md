@@ -114,3 +114,10 @@ As interações e transições de estado dos "Blobs" são definidas por uma sér
 
 Para mais detalhes sobre a implementação e os cálculos específicos, consulte os documentos de código-fonte e as anotações no repositório.
 
+
+## Documentação
+
+![Artigo Principal](https://github.com/visagetrack-project/.github/blob/93bfb7b35b5e634efa6a5b72eca85bb373121c6d/profile/Artigo%20vt.pdf)
+
+![Artigo Shortpaper](https://github.com/visagetrack-project/.github/blob/93bfb7b35b5e634efa6a5b72eca85bb373121c6d/profile/Shortpaper%20Visage%20Track.pdf)
+
